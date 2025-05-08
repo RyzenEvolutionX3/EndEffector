@@ -23,7 +23,6 @@ package org.tahomarobotics.robot;
  * Contains Port Mappings for the Robot.
  */
 public final class RobotMap {
-    public static final int PIGEON = 0;
     public record SwerveModulePorts(int drive, int steer, int encoder) {}
 
     // Swerve Modules
@@ -32,12 +31,7 @@ public final class RobotMap {
     public final static SwerveModulePorts BACK_LEFT_MOD = new SwerveModulePorts(3, 13, 23);
     public final static SwerveModulePorts BACK_RIGHT_MOD = new SwerveModulePorts(4, 14, 24);
 
-    // Elevator
-    public static final int ELEVATOR_LEFT_MOTOR = 5;
-    public static final int ELEVATOR_RIGHT_MOTOR = 6;
-    public static final int ARM_MOTOR = 7;
+    // Grabber
+    public static final int GRABBER = 1;
 
-    // Mechanism
-    public static final int MECHANISM_MOTOR_ONE = 8;
-    public static final int MECHANISM_MOTOR_TWO = 9;
 }
